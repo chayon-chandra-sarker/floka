@@ -11,6 +11,9 @@ import TestimonialSection from '../../componentes/TestimonialSection/Testimonial
 import ContactSection from '../../componentes/ContactSection/ContactSection';
 import AwardsSection from '../../componentes/AwardsSection/AwardsSection';
 import TeamSection from '../../componentes/TeamSection/TeamSection';
+import FaqGetAns from '../../componentes/FaqGetAns/FaqGetAns';
+import TickerSection from '../../componentes/TickerSection/TickerSection';
+import CompanyBlog from '../../componentes/CompanyBlog/CompanyBlog';
 
 const Home = () => {
     return (
@@ -27,6 +30,9 @@ const Home = () => {
             <ContactSection></ContactSection>
             <AwardsSection></AwardsSection>
             <TeamSection></TeamSection>
+            <FaqGetAns></FaqGetAns>
+            <TickerSection></TickerSection>
+            <CompanyBlog></CompanyBlog>
         </div>
     );
 };
