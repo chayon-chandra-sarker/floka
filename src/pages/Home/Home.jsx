@@ -7,6 +7,8 @@ import MoreWorks from '../../componentes/MoreWorks/MoreWorks';
 import PortfolioPage from '../../componentes/PortfolioPage/PortfolioPage';
 import HappyUser from '../../componentes/HappyUser/HappyUser';
 import VideoHero from '../../componentes/VideoHero/VideoHero';
+import TestimonialSection from '../../componentes/TestimonialSection/TestimonialSection';
+import ContactSection from '../../componentes/ContactSection/ContactSection';
 
 const Home = () => {
     return (
@@ -19,6 +21,8 @@ const Home = () => {
             <PortfolioPage></PortfolioPage>
             <HappyUser></HappyUser>
             <VideoHero></VideoHero>
+            <TestimonialSection></TestimonialSection>
+            <ContactSection></ContactSection>
         </div>
     );
 };
