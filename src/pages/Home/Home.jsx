@@ -5,6 +5,7 @@ import ScrollingText from '../../componentes/ScrollingText/ScrollingText';
 import Portfolio from '../../componentes/Portfolio/Portfolio';
 import MoreWorks from '../../componentes/MoreWorks/MoreWorks';
 import PortfolioPage from '../../componentes/PortfolioPage/PortfolioPage';
+import HappyUser from '../../componentes/HappyUser/HappyUser';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Portfolio></Portfolio>
             <MoreWorks></MoreWorks>
             <PortfolioPage></PortfolioPage>
+            <HappyUser></HappyUser>
         </div>
     );
 };
