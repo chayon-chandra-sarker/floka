@@ -2,13 +2,13 @@ import React from "react";
 
 const HappyUser = () => {
   return (
-    <div className="bg-[#f8f8f8] min-h-screen font-sans selection:bg-black selection:text-white">
+    <div className="bg-[#f8f8f8] font-sans selection:bg-black selection:text-white">
       
       {/* SECTION: HAPPY USERS */}
-      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-8 md:px-16">
+      <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-8 md:px-10">
         
         {/* Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10 md:mb-12 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 md:mb-10 text-center sm:text-left">
           <span className="text-sm sm:text-base md:text-lg font-bold uppercase tracking-widest text-gray-600">
             Happy Users
           </span>

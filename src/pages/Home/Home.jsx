@@ -6,6 +6,7 @@ import Portfolio from '../../componentes/Portfolio/Portfolio';
 import MoreWorks from '../../componentes/MoreWorks/MoreWorks';
 import PortfolioPage from '../../componentes/PortfolioPage/PortfolioPage';
 import HappyUser from '../../componentes/HappyUser/HappyUser';
+import VideoHero from '../../componentes/VideoHero/VideoHero';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <MoreWorks></MoreWorks>
             <PortfolioPage></PortfolioPage>
             <HappyUser></HappyUser>
+            <VideoHero></VideoHero>
         </div>
     );
 };
