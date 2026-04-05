@@ -9,6 +9,8 @@ import HappyUser from '../../componentes/HappyUser/HappyUser';
 import VideoHero from '../../componentes/VideoHero/VideoHero';
 import TestimonialSection from '../../componentes/TestimonialSection/TestimonialSection';
 import ContactSection from '../../componentes/ContactSection/ContactSection';
+import AwardsSection from '../../componentes/AwardsSection/AwardsSection';
+import TeamSection from '../../componentes/TeamSection/TeamSection';
 
 const Home = () => {
     return (
@@ -23,6 +25,8 @@ const Home = () => {
             <VideoHero></VideoHero>
             <TestimonialSection></TestimonialSection>
             <ContactSection></ContactSection>
+            <AwardsSection></AwardsSection>
+            <TeamSection></TeamSection>
         </div>
     );
 };
