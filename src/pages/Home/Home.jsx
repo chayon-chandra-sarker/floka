@@ -14,6 +14,7 @@ import TeamSection from '../../componentes/TeamSection/TeamSection';
 import FaqGetAns from '../../componentes/FaqGetAns/FaqGetAns';
 import TickerSection from '../../componentes/TickerSection/TickerSection';
 import CompanyBlog from '../../componentes/CompanyBlog/CompanyBlog';
+import Lets from '../../componentes/Lets/Lets';
 
 const Home = () => {
     return (
@@ -33,6 +34,7 @@ const Home = () => {
             <FaqGetAns></FaqGetAns>
             <TickerSection></TickerSection>
             <CompanyBlog></CompanyBlog>
+            <Lets></Lets>
         </div>
     );
 };
