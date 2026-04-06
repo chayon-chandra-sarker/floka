@@ -1,16 +1,38 @@
-# React + Vite
+# Floka Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Banner](https://i.ibb.co/PZSTjJ4f/10070.jpg)
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View Live Site](https://luxury-torrone-4904db.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📝 Description
+Floka is a modern, responsive, and visually appealing website designed to showcase services, portfolio, and projects. It emphasizes smooth animations, interactive elements, and a luxurious, playful aesthetic to create a memorable user experience. Perfect for digital agencies, startups, or personal branding websites.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- Fully responsive design for mobile, tablet, and desktop  
+- Smooth hover effects and transitions on images and cards  
+- Animated entrance for headings and content  
+- Blurred image hover effects for interactive feel  
+- Interactive cards with count-up numbers and stats  
+- Contact form with clean UI  
+- Grid-based layouts for portfolio/projects  
+- Modern typography and color scheme  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- **Frontend:** React.js  
+- **Styling:** Tailwind CSS  
+- **Animations:** Framer Motion  
+- **Image Hosting:** [ImgBB](https://imgbb.com/)  
+- **Deployment:** Netlify  
+
+---
+
+## ⚡ Installation & Setup
+1. Clone the repository:
+
+```bash
+git clone https://github.com/chayon-chandra-sarker/floka.git
