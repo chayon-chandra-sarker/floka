@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import awardImag from "../../assets/image/10062.jpg";
 
 const AwardsSection = () => {
+    const textLines = [
+    "Driven by passion and grounded in expertise, our team turns bold ideas into reality leading the way in creative innovation."
+  ];
   const awards = [
     { title: "BEST DESIGNER AWARDS", platform: "AWWWARDS", year: "2025" },
     { title: "PEAKY UI DESIGNER", platform: "GOOGLE", year: "2024" },
@@ -13,16 +16,13 @@ const AwardsSection = () => {
 
   return (
     <section className="bg-[#f5f5f5] py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-10 lg:px-16 font-sans overflow-hidden">
-      
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 lg:gap-16 items-start">
-        
         {/* LEFT SIDE */}
         <div className="lg:col-span-4 space-y-4 sm:space-y-6">
-          
           <div className="relative rounded-2xl md:rounded-[32px] overflow-hidden group">
-            <img 
+            <img
               src={awardImag}
-              alt="Team" 
+              alt="Team"
               className="w-full h-[250px] sm:h-[320px] md:h-[400px] object-cover"
             />
           </div>
@@ -34,7 +34,6 @@ const AwardsSection = () => {
 
         {/* RIGHT SIDE */}
         <div className="lg:col-span-8">
-          
           {/* Badge */}
           <div className="flex justify-center lg:justify-center mb-8 md:mb-12">
             <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border border-gray-200 flex items-center justify-center opacity-40">
@@ -43,9 +42,23 @@ const AwardsSection = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-[1.3] tracking-tight text-[#1a1a1a] mb-10 md:mb-14 lg:mb-16 text-center lg:text-left">
-            Driven by passion and grounded in expertise, our team turns bold ideas into reality, leading the way in creative innovation.
-          </h2>
+          <div className="max-w-4xl mx-auto">
+            {textLines.map((line, index) => (
+              <motion.h2
+                key={index}
+                className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium leading-[1.3] tracking-tight text-[#1a1a1a] mb-6 lg:mb-8 text-center lg:text-left"
+                initial={{ x: 200, opacity: 0 }} 
+                animate={{ x: 0, opacity: 1 }} 
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.3,
+                }} 
+              >
+                {line}
+              </motion.h2>
+            ))}
+          </div>
 
           {/* Awards List */}
           <div className="border-t border-gray-200">
@@ -55,7 +68,6 @@ const AwardsSection = () => {
                 whileHover={{ scale: 0.98 }}
                 className="group relative flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-0 py-6 sm:py-7 md:py-8 px-4 sm:px-6 border-b border-gray-200 transition-all duration-500 cursor-pointer hover:bg-white hover:shadow-sm"
               >
-                
                 {/* Title */}
                 <div className="flex-1">
                   <h3 className="text-sm sm:text-base md:text-lg font-bold tracking-widest text-gray-800 uppercase">
@@ -72,11 +84,9 @@ const AwardsSection = () => {
                     {award.year}
                   </span>
                 </div>
-
               </motion.div>
             ))}
           </div>
-
         </div>
       </div>
     </section>

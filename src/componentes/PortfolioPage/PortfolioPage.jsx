@@ -1,6 +1,8 @@
 import React from "react";
 import DarkShowcaseCard from "../DarkShowcaseCard/DarkShowcaseCard";
 import WorldwideStatsCard from "../WorldwideStatsCard/WorldwideStatsCard";
+import { motion } from "framer-motion";
+import ProjectCompletCount from "../ProjectCompletCount/ProjectCompletCount";
 
 const PortfolioPage = () => {
   return (
@@ -19,18 +21,19 @@ const PortfolioPage = () => {
             <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-6 block">
               Fun Facts
             </span>
-            <h2 className="text-4xl md:text-5xl font-medium leading-tight mb-12">
-              Consistently delivering impactful results through a perfect blend.
-            </h2>
+            <div>
+              <motion.h2
+                className="text-4xl md:text-5xl font-medium leading-tight mb-12"
+                initial={{ x: 200, opacity: 0 }} // right থেকে শুরু
+                animate={{ x: 0, opacity: 1 }} // final position
+                transition={{ duration: 0.8, ease: "easeOut" }} // smooth slide
+              >
+                Consistently delivering impactful results through a perfect
+                blend.
+              </motion.h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[#f8f8f8] p-10 rounded-[32px] flex justify-between items-center group hover:bg-black transition-all">
-                <p className="text-xs font-bold text-gray-400 group-hover:text-gray-500 uppercase max-w-[80px]">
-                  Projects completed
-                </p>
-                <span className="text-5xl font-bold italic group-hover:text-white transition-all">
-                  2k+
-                </span>
-              </div>
+              <ProjectCompletCount></ProjectCompletCount>
               <div className="row-span-2 bg-[#f8f8f8] p-10 rounded-[40px] flex flex-col justify-between">
                 <div>
                   <div className="flex text-orange-500 text-5xl gap-1 ">

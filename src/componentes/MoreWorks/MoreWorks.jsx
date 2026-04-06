@@ -8,7 +8,7 @@ const MoreWorks = () => {
       <section>
         <div className="flex justify-center items-center my-9">
           <div className="mt-1 sm:mt-2 flex items-center gap-2">
-            <div className="w-12 h-12  rounded-full bg-black flex items-center justify-center text-white text-xl">
+            <div className="w-12 h-12  rounded-full bg-black flex items-center justify-center text-white text-xl transition-transform duration-500 hover:rotate-[360deg]">
               +
             </div>
             <span className="text-2xl  font-bold tracking-tighter text-black uppercase">

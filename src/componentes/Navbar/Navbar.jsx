@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router";
 import logo from "../../assets/logo/10015.png";
 import Container from "../Container/Container";
+import { MdLightMode } from "react-icons/md";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // mobile menu toggle
-  const [submenuOpen, setSubmenuOpen] = useState({}); // mobile submenu toggle
+  const [menuOpen, setMenuOpen] = useState(false); 
+  const [submenuOpen, setSubmenuOpen] = useState({}); 
 
   const toggleSubmenu = (key) => {
     setSubmenuOpen((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -179,7 +180,7 @@ const Navbar = () => {
           </ul>
 
           {/* BUTTON */}
-          <button className="btn hidden lg:block">Button</button>
+          <button className=" hidden lg:block"><MdLightMode size={30}/></button>
         </div>
       </Container>
 
@@ -220,7 +221,7 @@ const Navbar = () => {
                     )}
                   </li>
 
-                  {/* Repeat same for Contact, Service, Careers, Shop */}
+                 
                 </ul>
               )}
             </li>

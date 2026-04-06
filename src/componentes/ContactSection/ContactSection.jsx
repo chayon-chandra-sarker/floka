@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
@@ -13,10 +14,15 @@ const ContactSection = () => {
                 <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6">
                   Get in touch
                 </h4>
-                <h1 className="text-4xl md:text-6xl font-medium leading-[1.1] max-w-lg">
+                <motion.h1
+                  className="text-4xl md:text-6xl font-medium leading-[1.1] max-w-lg"
+                  initial={{ x: 200, opacity: 0 }} // right থেকে শুরু
+                  animate={{ x: 0, opacity: 1 }} // final position
+                  transition={{ duration: 0.8, ease: "easeOut" }} // smooth slide
+                >
                   Tell us about your project — whether it's a website, SEO, or
                   marketing.
-                </h1>
+                </motion.h1>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -59,7 +65,7 @@ const ContactSection = () => {
             </div>
 
             {/* Right Side: Form Card */}
-            <div className="bg-white text-black rounded-[40px] p-8 md:p-12 shadow-2xl">
+            <div className="bg-white text-black rounded-[40px] p-8 md:p-12 shadow-2xl transform transition-transform duration-300 hover:scale-95">
               <h2 className="text-3xl font-medium mb-10">
                 Have a project in mind?
               </h2>
@@ -112,7 +118,7 @@ const ContactSection = () => {
                 </div>
 
                 <button className="flex items-center gap-4 group mt-4">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                     <span className="text-xl">+</span>
                   </div>
                   <span className="text-xs font-bold tracking-[0.2em] uppercase">

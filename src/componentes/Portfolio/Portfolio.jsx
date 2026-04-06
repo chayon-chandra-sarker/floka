@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "../Container/Container";
 import porthImag from "../../assets/image/10032.webp";
+import { motion } from "framer-motion";
+
 
 const Portfolio = () => {
   const projects = [
@@ -51,9 +53,14 @@ const Portfolio = () => {
             <div className="flex flex-col md:flex-row justify-end items-start mt-12">
               {/* Main Title Section */}
               <div className="max-w-2xl">
-                <h2 className="text-xl md:text-5xl lg:text-5xl font-medium text-gray-900">
+                <motion.h2
+                  className="text-xl md:text-5xl lg:text-5xl font-medium text-gray-900"
+                  initial={{ x: 200, opacity: 0 }} // right থেকে শুরু
+                  animate={{ x: 0, opacity: 1 }} // final position
+                  transition={{ duration: 0.8, ease: "easeOut" }} // animation timing
+                >
                   Strategy to build powerful digital solutions.
-                </h2>
+                </motion.h2>
               </div>
             </div>
           </div>
@@ -118,17 +125,17 @@ const Portfolio = () => {
                 </p>
               </div>
             </div>
-               <div className="mt-6 flex justify-between items-center px-2 transition-all duration-500 group-hover:translate-x-1 bg-gray-100 py-3 px-7 rounded-xl">
-                  <div>
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-gray-900">
-                     <p>Aldan Branding</p>
-                    </h3>
-                  </div>
+            <div className="mt-6 flex justify-between items-center px-2 transition-all duration-500 group-hover:translate-x-1 bg-gray-100 py-3 px-7 rounded-xl">
+              <div>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-gray-900">
+                  <p>Aldan Branding</p>
+                </h3>
+              </div>
 
-                  <span className="text-xs text-gray-700 font-medium ">
-                    <p>2025</p>
-                  </span>
-                </div>
+              <span className="text-xs text-gray-700 font-medium ">
+                <p>2025</p>
+              </span>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
             {projects2Parts.map((projects2Part) => (
